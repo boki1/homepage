@@ -1,0 +1,180 @@
+<html lang="en_GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kstoimenov</title>
+    <link rel="icon" sizes="any" href="profile_pic.jpg">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="portfolio colortheme main container">
+    <header>
+		<center> <nav itemscope="">
+            <a itemprop="url" href="#about-me"><span itemprop="name">[about]</span></a>
+            <a itemprop="url" href="#technologies"><span itemprop="name">[technologies]</span></a>
+            <a itemprop="url" href="#projects"><span itemprop="name">[projects]</span></a>
+            <a itemprop="url" href="#courses-and-awards"><span itemprop="name">[courses-and-awards]</span></a>
+            <a itemprop="url" href="#contact"><span itemprop="name">[contact]</span></a>
+        </nav> </center>
+
+		</br>
+    </header>
+
+    <main>
+        <header>
+			<center>
+            <h1>Kristiyan Stoimenov</h1>
+			</center>
+        </header>
+
+        <center>
+            <img src="profile_pic.jpg" alt="profile_pic.jpg" title="Profile picture" class="profile-pic">
+        </center>
+
+		<div id="about-me" name="about-me">
+			<h2>About me</h2>
+			<ul>
+				<li>Student at <a href="https://tues.bg">ELSYS</a></li>
+				<li>Test Engineer at <a href="https://www.mm-sol.com/">MM Solutions</a></li>
+				<li>Developing open-source projects for fun and profit, most of which are public in my <a href="https://github.com/boki1">GitHub profile</a></li>
+				<li>Fantasy books fan</li>
+				<li>Compiler and kernel enthusiast</li>
+			</ul>
+		</div>
+
+		</br>
+
+		<div id="projects" name="projects">
+			<h2>Projects</h2>
+
+			<strong><a href="https://github.com/boki1/eugene">Eugene</a></strong>
+			<ul>
+				<li>System for Data Storing and Retrieving Based on Large Graph Processing</li>
+				<li>Framework for creating different kinds of databases (key-value, dictionary, relational, etc.)</li>
+				<li>Provides the client with all necessary tools for implementing the exact tool he/she desires</li>
+				<li>The main functionalities include:
+					<ul>
+						<li><b>Storage mechanism</b>: Using a Btree with extended functionalities, compression based on Huffman coding</li>
+						<li><b>Communication module</b>: Using a lock-free queue, the different computing nodes synchronize their operation</li>
+						<li><b>Indexing</b>: The Eugene core provides the user with the ability to construct different indices of the data stored within</li>
+					</ul>
+				</li>
+			</ul>
+
+			<strong><a href="https://github.com/boki1/kivi">Kivi</a></strong>
+			<ul>
+				<li>Compiler for a C-like language called Kivi</li>
+				<li>Procedural imperative general purpose programming language</li>
+				<li>Not intended as a technology which will be used in real-world project. Also, it is not intended to be an alternative implementation of any C compiler</li>
+				<li>The main functionalities include:
+					<ul>
+						<li><b>Mathematical expressions</b></li>
+						<li><b>Variable definitions</b></li>
+						<li><b>Function definitions</b></li>
+						<li><b>Control flow</b>
+							<ul>
+								<li>If statements</li>
+								<li>While loops</li>
+								<li>Return</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<strong><a href="https://github.com/boki1/telamon">Telamon</a></strong>
+			<ul>
+				<li>Wait-Free simulation for lock-free algorithms</li>
+				<li>Implementation of the algorithm described in <a href="https://www.cs.technion.ac.il/~erez/Papers/wf-simulation-full.pdf">this</a> paper</li>
+				<li>Transformation mechanism, able to execute a given lock-free algorithm as if it was wait-free, based on a few properties of the lock-free algorithm implementation</li>
+				<li>Splits the stages involved in executing a complete operation of the data structure in such a way that the majority of the operation can be parallelized safely</li>
+				<li>The gist of the algorithm is that every operation is first executed in the so-called fast-path, which essentially represents a regular lock-free execution. If the execution is not successful, the thread-owner of the operation switches to the slow-path.</li>
+				<li>The slow-path is implemented as a mechanism in which the thread-owner of the operation asks for help the other threads and after that repeats the operation.</li>
+				<li>he key difference between the wait-free and lock-free algorithm is that the failed operation is guaranteed to succeed at some point with the wait-free, but that is not the case when the algorithm is lock-free.</li>
+			</ul>
+
+			<strong><a href="https://github.com/boki1/kivi">6502-emulator</a></strong>
+			<ul>
+				<li>Behaviour-driven emulator of the MOS 6502 CPU</li>
+				<li>Supports all legal opcodes of the CPU</li>
+				<li>Supports all addressing modes of the CPU</li>
+				<li>Emulates cycle-correctess</li>
+				<li>Easy integration with GUI monitor</li>
+				<img src="https://user-images.githubusercontent.com/36764968/146646100-f602a819-06b9-4fed-a13b-d6ecc7c1bdcd.png" class="project-img"/>
+				<img src="https://user-images.githubusercontent.com/36764968/146646102-1d632c33-4794-4324-a9e6-8334b03e1c7a.png" class="project-img"/>
+			</ul>
+
+			<strong><a href="https://github.com/boki1/HackTues365">Spenser</a></strong>
+			<ul>
+				<li>System which aims at helping elderly people licing in rest homes.</li>
+				<li>Comprised of a <b>main station</b> from which the patients can get their pills, and substations - <b>notification bases</b>, which are placed in each person's room and notify them at appropriate times.</li>
+				<li>Spenser's goal is to prevent accidents related to dosing and timing of the pill.</li>
+			</ul>
+
+		</div>
+
+		<div id="technologies" name="technologies">
+			<h2>Technologies I use</h2>
+			<strong>Most comfortable with</strong>
+			<ul>
+				<li>C</li>
+				<li>C++</li>
+				<li>Bash</li>
+				<li>Rust</li>
+			</ul>
+			<strong>Have used in school</strong>
+			<ul>
+				<li>Java</li>
+				<li>Python</li>
+				<li>HTML & CSS</li>
+		</div>
+
+		<div id="skills" name="skills">
+				<h2>Skills</h2>
+				<ul>
+					<li>Fundamental knowledge of OO systems and design patterns</li>
+					<li>Experience with debugging utilities, building systems, testing frameworks and version control systems</li>
+					<li>Team player with good organization habits</li>
+					<li>Highly motivated and eager to learn</li>
+					<li>Ability to devel data structures and algorithms</li>
+					<li>Presentation skills</li>
+				</ul>
+		</div>
+
+		<div id="courses-and-awards" name="courses-and-awards">
+				<h2>Courses</h2>
+				<ul>
+					<li>Introduction to <b>Quantum Computing</b> by The Coding School, IBM Quantum, MIT and Oxford (2020/2021)</li>
+					<li><b>Teenovator</b> (2019/2020)</li>
+					<li><b>Algorithms and Data Structures</b> by ELSYS (2018)</li>
+					<li><b>SoftUni {Python, Java} Fundamentals</b> (2018)</li>
+					<li><b>SAP GeekyCamp 5</b> (2018)</li>
+				</ul>
+				<h2>Awards</h2>
+				<ul>
+					<li><b>TUESFest2021</b> - special award from Isobar</li>
+					<li><b>HACKTUESGG</b> - 2nd place and special awards from TelebidPro, A1 Bulgaria and Strypes</li>
+					<li><b>HackTUES6</b> - special awards from VMWare Bulgaria and Creative Assembly Sofia</li>
+				</ul>
+		</div>
+
+
+		</br>
+
+		<div id="contact" name="contact">
+			<h2>Contacts</h2>
+			<ul>
+				<li><a href="mailto:kristoimenov@gmail.com">E-mail</a></li>
+				<li><a href="https://www.linkedin.com/in/kristiyan-stoimenov/">LinkedIn</a></li>
+				<li><a href="https://github.com/boki1">GitHub</a></li>
+			</ul>
+		</div>
+
+		</br>
+
+    </main>
+
+</body>
+</html>
