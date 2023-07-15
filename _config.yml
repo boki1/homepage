@@ -1,0 +1,29 @@
+title: "Kris' Blog"
+author: "Kristiyan Stoimenov"
+description: "Blog about interesting to me topics."
+
+email: "kristoimenov@gmail.com"
+github_username: "boki1"
+linkedin_username: "kristiyan-stoimenov"
+
+#########################################################################################
+######### Nothing below needs to be changed (unless you know what you're doing) #########
+#########################################################################################
+theme: "minima"
+
+rss: rss
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+titles_from_headings:
+  strip_title: true
+  collections: true
+
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Other
